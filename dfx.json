@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ICP-24-hack-backend": {
+      "main": "src/ICP-24-hack-backend/main.mo",
+      "type": "motoko"
+    },
+    "ICP-24-hack-frontend": {
+      "dependencies": [
+        "ICP-24-hack-backend"
+      ],
+      "source": [
+        "src/ICP-24-hack-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICP-24-hack-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
